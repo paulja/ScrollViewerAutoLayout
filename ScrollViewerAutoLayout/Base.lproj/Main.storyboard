@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="PJViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pfN-RN-Swk"/>
+                        <viewControllerLayoutGuide type="bottom" id="ptM-Mq-VRy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9S-Ol-4kx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBS-N6-fm6">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="JbZ-XA-cEu">
+                                                <rect key="frame" x="142" y="64" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </activityIndicatorView>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rVt-Fd-XS0">
+                                                <rect key="frame" x="142" y="467" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="lmk-WX-637"/>
+                                            <constraint firstAttribute="height" constant="568" id="pLW-sg-Lsn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="568" id="0Bn-KT-Nvd"/>
+                                    <constraint firstItem="PBS-N6-fm6" firstAttribute="leading" secondItem="C9S-Ol-4kx" secondAttribute="leading" id="4c4-UB-5Wp"/>
+                                    <constraint firstAttribute="trailing" secondItem="PBS-N6-fm6" secondAttribute="trailing" id="8H6-si-x1r"/>
+                                    <constraint firstItem="PBS-N6-fm6" firstAttribute="top" secondItem="C9S-Ol-4kx" secondAttribute="top" id="Orh-OD-vwv"/>
+                                    <constraint firstAttribute="bottom" secondItem="PBS-N6-fm6" secondAttribute="bottom" id="Tps-4J-2hJ"/>
+                                    <constraint firstAttribute="width" constant="320" id="qDT-ct-Uy4"/>
+                                    <constraint firstItem="PBS-N6-fm6" firstAttribute="leading" secondItem="C9S-Ol-4kx" secondAttribute="leading" id="qX4-5p-WxA"/>
+                                    <constraint firstItem="PBS-N6-fm6" firstAttribute="top" secondItem="C9S-Ol-4kx" secondAttribute="top" id="vBv-4q-v05"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C9S-Ol-4kx" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="4wt-0q-QNe"/>
+                            <constraint firstAttribute="trailing" secondItem="C9S-Ol-4kx" secondAttribute="trailing" id="CEU-mh-14o"/>
+                            <constraint firstItem="C9S-Ol-4kx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="NtY-Qw-j9h"/>
+                            <constraint firstItem="ptM-Mq-VRy" firstAttribute="top" secondItem="C9S-Ol-4kx" secondAttribute="bottom" id="TWM-yA-VIO"/>
+                            <constraint firstItem="C9S-Ol-4kx" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="bsp-cd-kC4"/>
+                            <constraint firstItem="C9S-Ol-4kx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="eth-wn-aO7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentViewHeightConstraint" destination="pLW-sg-Lsn" id="0Pp-0Y-Vli"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
